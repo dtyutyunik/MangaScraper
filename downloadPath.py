@@ -35,12 +35,24 @@ def createChapterFolder(mangaTitle,chapterTitle):
 def downloadAChapter(mangaTitle,chapterTitle,mangaObject):
     path = os.path.join(savePath, mainLibrary, mangaTitle, chapterTitle)
     
+    # im1 = Image.open(r"C:\Users\System-Pc\Desktop\flower1.jpg")  
+  
+    # save a image using extension 
+    # im1 = im1.save("geeks.jpg") 
+
+    # with open(path) as fpath:
     for (key, index) in mangaObject.items():
-        print('key', key, 'index',index)
-        image1 = Image.open(r'path where the image is stored\file name.png')
-        im1 = image1.convert('RGB')
-        im1.save(r'path where the pdf will be stored\new file name.pdf')
+            # fpath.write(index)
+            # im1 = Image.open(index)  
+            print('key', key, 'index',index)
+        
+        # image1 = Image.open(r'path where the image is stored\file name.png')
+        # im1 = image1.convert('RGB')
+        # im1.save(r'path where the pdf will be stored\new file name.pdf')
     # pass
+
+
+
 
 def runner(mangaTitle,mangaObject):
     createMainLibrary()
